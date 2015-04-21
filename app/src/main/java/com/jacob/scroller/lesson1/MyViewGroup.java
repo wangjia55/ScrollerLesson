@@ -3,9 +3,9 @@ package com.jacob.scroller.lesson1;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
 import android.widget.OverScroller;
-import android.widget.Scroller;
 
 /**
  * Created by jacob-wj on 2015/4/21.
@@ -24,7 +24,7 @@ public class MyViewGroup extends LinearLayout {
 
     public MyViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        mScroller = new OverScroller(context);
+        mScroller = new OverScroller(context,new AccelerateInterpolator());
     }
 
     @Override

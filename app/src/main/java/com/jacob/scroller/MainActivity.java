@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.jacob.scroller.lesson1.LessonOneActivity;
+import com.jacob.scroller.lesson2.LessonTwoActivity;
+import com.jacob.scroller.lesson3.MultiScreenActivity;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,4 +25,16 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, LessonOneActivity.class);
         startActivity(intent);
     }
+
+    public void lessonTwo(View view){
+        Intent intent = new Intent(this, LessonTwoActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void lessonThree(View view){
+        Intent intent = new Intent(this, MultiScreenActivity.class);
+        startActivity(intent);
+    }
+
 }
